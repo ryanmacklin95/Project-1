@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Supply_Order</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>CompactSupply</compactLayoutAssignment>
+    <label>Supply Order</label>
+    <picklistValues>
+        <picklist>Choose_Rewards__c</picklist>
+        <values>
+            <fullName>Free double cheeseburger %285000%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Free small fries %282500%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status</picklist>
+        <values>
+            <fullName>Activated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Draft</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Supply</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

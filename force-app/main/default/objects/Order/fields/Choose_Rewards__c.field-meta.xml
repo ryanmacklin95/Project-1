@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Choose_Rewards__c</fullName>
+    <externalId>false</externalId>
+    <label>Choose Rewards</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Free small fries (2500)</fullName>
+                <default>false</default>
+                <label>Free small fries (2500)</label>
+            </value>
+            <value>
+                <fullName>Free double cheeseburger (5000)</fullName>
+                <default>false</default>
+                <label>Free double cheeseburger (5000)</label>
+            </value>
+            <value>
+                <fullName>None</fullName>
+                <default>true</default>
+                <label>None</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

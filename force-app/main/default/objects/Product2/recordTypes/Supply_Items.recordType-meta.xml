@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Supply_Items</fullName>
+    <active>true</active>
+    <label>Supply Items</label>
+    <picklistValues>
+        <picklist>Family</picklist>
+        <values>
+            <fullName>None</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Product_Category__c</picklist>
+        <values>
+            <fullName>Desserts</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Drink</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sandwiches</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sides</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Product__c</picklist>
+        <values>
+            <fullName>Apple Pie</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cheeseburger</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chicken Nuggets</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chicken Sandwich</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coffee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cookies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Double Cheeseburger</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fish Filet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>French Fries</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ice Cream Cone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Juice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Milkshake</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salad</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Smoothie</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Soda</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spicy Chicken Sandwich</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>QuantityUnitOfMeasure</picklist>
+        <values>
+            <fullName>Each</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Supply_Item__c</picklist>
+        <values>
+            <fullName>Apple</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Beef</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coffee Beans</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dairy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fish</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lettuce</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Potato</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>
