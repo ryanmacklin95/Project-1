@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Choose_Rewards</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+  RecordTypeId = &quot;0125e0000007mw2&quot;,
+  OR(
+    ISBLANK(Choose_Rewards__c),
+    AND(
+      OR(
+        INCLUDES( Choose_Rewards__c, &quot;Free double cheeseburger (5000)&quot;),
+        INCLUDES( Choose_Rewards__c, &quot;Free double cheeseburger (5000)&quot;)
+      ),
+      INCLUDES( Choose_Rewards__c, &quot;None&quot;)
+    )
+  )
+)</errorConditionFormula>
+    <errorMessage>Must choose value for rewards / cannot have a reward chosen along none</errorMessage>
+</ValidationRule>
