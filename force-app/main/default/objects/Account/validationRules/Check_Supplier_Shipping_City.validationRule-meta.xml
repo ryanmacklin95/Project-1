@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Check_Supplier_Shipping_City</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+$RecordType.Name = &quot;Supplier Account&quot;,
+ISBLANK(ShippingCity)
+)</errorConditionFormula>
+    <errorDisplayField>ShippingCity</errorDisplayField>
+    <errorMessage>Must enter a city</errorMessage>
+</ValidationRule>
