@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product__c</fullName>
+    <externalId>false</externalId>
+    <label>Product</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Product_Category__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Apple Pie</fullName>
+                <default>false</default>
+                <label>Apple Pie</label>
+            </value>
+            <value>
+                <fullName>Cheeseburger</fullName>
+                <default>false</default>
+                <label>Cheeseburger</label>
+            </value>
+            <value>
+                <fullName>Chicken Nuggets</fullName>
+                <default>false</default>
+                <label>Chicken Nuggets</label>
+            </value>
+            <value>
+                <fullName>Chicken Sandwich</fullName>
+                <default>false</default>
+                <label>Chicken Sandwich</label>
+            </value>
+            <value>
+                <fullName>Coffee</fullName>
+                <default>false</default>
+                <label>Coffee</label>
+            </value>
+            <value>
+                <fullName>Cookies</fullName>
+                <default>false</default>
+                <label>Cookies</label>
+            </value>
+            <value>
+                <fullName>Double Cheeseburger</fullName>
+                <default>false</default>
+                <label>Double Cheeseburger</label>
+            </value>
+            <value>
+                <fullName>Fish Filet</fullName>
+                <default>false</default>
+                <label>Fish Filet</label>
+            </value>
+            <value>
+                <fullName>French Fries</fullName>
+                <default>false</default>
+                <label>French Fries</label>
+            </value>
+            <value>
+                <fullName>Ice Cream Cone</fullName>
+                <default>false</default>
+                <label>Ice Cream Cone</label>
+            </value>
+            <value>
+                <fullName>Juice</fullName>
+                <default>false</default>
+                <label>Juice</label>
+            </value>
+            <value>
+                <fullName>Milkshake</fullName>
+                <default>false</default>
+                <label>Milkshake</label>
+            </value>
+            <value>
+                <fullName>Salad</fullName>
+                <default>false</default>
+                <label>Salad</label>
+            </value>
+            <value>
+                <fullName>Smoothie</fullName>
+                <default>false</default>
+                <label>Smoothie</label>
+            </value>
+            <value>
+                <fullName>Soda</fullName>
+                <default>false</default>
+                <label>Soda</label>
+            </value>
+            <value>
+                <fullName>Spicy Chicken Sandwich</fullName>
+                <default>false</default>
+                <label>Spicy Chicken Sandwich</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Desserts</controllingFieldValue>
+            <valueName>Apple Pie</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Desserts</controllingFieldValue>
+            <valueName>Cookies</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Desserts</controllingFieldValue>
+            <valueName>Ice Cream Cone</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Drink</controllingFieldValue>
+            <valueName>Coffee</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Drink</controllingFieldValue>
+            <valueName>Juice</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Drink</controllingFieldValue>
+            <valueName>Milkshake</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Drink</controllingFieldValue>
+            <valueName>Smoothie</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Drink</controllingFieldValue>
+            <valueName>Soda</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sandwiches</controllingFieldValue>
+            <valueName>Cheeseburger</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sandwiches</controllingFieldValue>
+            <valueName>Chicken Sandwich</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sandwiches</controllingFieldValue>
+            <valueName>Double Cheeseburger</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sandwiches</controllingFieldValue>
+            <valueName>Fish Filet</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sandwiches</controllingFieldValue>
+            <valueName>Spicy Chicken Sandwich</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sides</controllingFieldValue>
+            <valueName>Chicken Nuggets</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sides</controllingFieldValue>
+            <valueName>French Fries</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sides</controllingFieldValue>
+            <valueName>Salad</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>
