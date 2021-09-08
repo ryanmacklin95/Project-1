@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>CompactSupply</fullName>
-    <fields>AccountId</fields>
-    <fields>EffectiveDate</fields>
-    <fields>Status</fields>
-    <fields>TotalAmount</fields>
-    <label>Compact Supply</label>
-</CompactLayout>
