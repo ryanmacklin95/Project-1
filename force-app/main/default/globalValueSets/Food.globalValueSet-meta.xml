@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Apple Pie</fullName>
+        <default>false</default>
+        <label>Apple Pie</label>
+    </customValue>
+    <customValue>
+        <fullName>Apple Slices</fullName>
+        <default>false</default>
+        <label>Apple Slices</label>
+    </customValue>
+    <customValue>
+        <fullName>Cheeseburger</fullName>
+        <default>false</default>
+        <label>Cheeseburger</label>
+    </customValue>
+    <customValue>
+        <fullName>Chicken Nuggets</fullName>
+        <default>false</default>
+        <label>Chicken Nuggets</label>
+    </customValue>
+    <customValue>
+        <fullName>Chicken Sandwich</fullName>
+        <default>false</default>
+        <label>Chicken Sandwich</label>
+    </customValue>
+    <customValue>
+        <fullName>Coffee</fullName>
+        <default>false</default>
+        <label>Coffee</label>
+    </customValue>
+    <customValue>
+        <fullName>Cookies</fullName>
+        <default>false</default>
+        <label>Cookies</label>
+    </customValue>
+    <customValue>
+        <fullName>Double Cheeseburger</fullName>
+        <default>false</default>
+        <label>Double Cheeseburger</label>
+    </customValue>
+    <customValue>
+        <fullName>Fish Filet</fullName>
+        <default>false</default>
+        <label>Fish Filet</label>
+    </customValue>
+    <customValue>
+        <fullName>French Fries</fullName>
+        <default>false</default>
+        <label>French Fries</label>
+    </customValue>
+    <customValue>
+        <fullName>Ice Cream Cone</fullName>
+        <default>false</default>
+        <label>Ice Cream Cone</label>
+    </customValue>
+    <customValue>
+        <fullName>Juice</fullName>
+        <default>false</default>
+        <label>Juice</label>
+    </customValue>
+    <customValue>
+        <fullName>Milkshake</fullName>
+        <default>false</default>
+        <label>Milkshake</label>
+    </customValue>
+    <customValue>
+        <fullName>Smoothie</fullName>
+        <default>false</default>
+        <label>Smoothie</label>
+    </customValue>
+    <customValue>
+        <fullName>Soda</fullName>
+        <default>false</default>
+        <label>Soda</label>
+    </customValue>
+    <customValue>
+        <fullName>Spicy Chicken Sandwich</fullName>
+        <default>false</default>
+        <label>Spicy Chicken Sandwich</label>
+    </customValue>
+    <customValue>
+        <fullName>Sundae</fullName>
+        <default>false</default>
+        <label>Sundae</label>
+    </customValue>
+    <customValue>
+        <fullName>Dairy</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Dairy</label>
+    </customValue>
+    <customValue>
+        <fullName>Fish</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Fish</label>
+    </customValue>
+    <customValue>
+        <fullName>Lettuce</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Lettuce</label>
+    </customValue>
+    <customValue>
+        <fullName>Potato</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Potato</label>
+    </customValue>
+    <customValue>
+        <fullName>Coffee Beans</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Coffee Beans</label>
+    </customValue>
+    <customValue>
+        <fullName>Beef</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Beef</label>
+    </customValue>
+    <masterLabel>Food</masterLabel>
+    <sorted>true</sorted>
+</GlobalValueSet>
