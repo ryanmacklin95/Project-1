@@ -1,0 +1,68 @@
+<apex:page controller="pageController" standardStylesheets="False">
+    <apex:stylesheet value="{!$Resource.StylingSheet}"/>
+    <style>
+        .block {
+        text-align: center !important;
+        background: #FFBC0D !important;
+        }
+        .PanelWrapper .mainTitle{
+        background-color: #DA291C !important;
+        color: #FFFFFF !important;
+        text-align: center !important;
+        }
+        .dataTable th{
+        background: #FFBC0D !important;
+        }
+    </style>
+    <apex:slds />
+    <apex:form>
+        <div id="block">
+            <apex:outputPanel styleClass="PanelWrapper">
+                <apex:pageBlock title="Account">
+                    <apex:pageBlockSection title="Account Summary" >
+                        <apex:outputField value="{!Account[0].name}"/>
+                        <apex:OutputField value="{!Account[0].Email__c}" />
+                        <apex:outputField value="{!Account[0].RewardPoints__c}"/>
+                    </apex:pageBlockSection>
+                </apex:pageBlock>
+                
+                <apex:pageBlock title = "Personal Information">
+                    <apex:pageBlockSection title="Personal Information" >
+                        <apex:outputField value="{!Contact.firstName}"/>
+                        <apex:outputField value="{!Contact.lastName}" />
+                        <apex:outputField value="{!Contact.birthDate}"/>
+                    </apex:pageBlockSection>
+                </apex:pageBlock>       
+                <apex:outputPanel styleClass="dataTable">
+                    <apex:pageBlock title="Order Summary">
+                        <apex:pageBlockTable value="{!WrappedData}" var="wrapped">
+                            <apex:column value="{!wrapped.OrderNumber.orderNumber}" headerValue="Order Number"/>
+                            <apex:column value="{!wrapped.totalProducts}" headerValue="Items"/>
+                            <apex:column value="{!wrapped.OrderNumber.EffectiveDate}" headerValue="Order Date"/>
+                            <apex:column value="{!wrapped.OrderNumber.totalAmount}" headerValue="Total Price" />
+                        </apex:pageBlockTable>
+                    </apex:pageBlock>
+                </apex:outputPanel>
+                
+                <apex:pageBlock title="Rewards List" id="centered">
+                    <p class="slds-align_absolute-Center slds-border_bottom">
+                        Here is the List of Reward Items available!
+                    </p>
+                    <br/>
+                    
+                    <apex:outputText value="Choice 1: {!Reward[0]}">
+                    </apex:outputText>
+                    <br />
+                    <apex:image url="{!$Resource.Small_Fries}" alt="Small Fries"/>
+                    <br />
+                    <apex:outputText value="Choice 2: {!Reward[1]}"></apex:outputText>
+                    <br/>
+                    <apex:image url="{!$Resource.double_cheese}" alt="Double Cheeseburger" />
+                    
+                </apex:pageBlock> 
+            </apex:outputPanel>
+        </div>
+    </apex:form>
+    
+    
+</apex:page>

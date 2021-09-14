@@ -1,0 +1,17 @@
+
+:root {
+    --palette-Yellow: #FFBC0D
+    --palette-Red: #DA291C
+    --palette-White: #FFFFFF
+}
+html{
+    background-color:var(--palette-Yellow);
+}
+body {
+    margin: 0;
+    
+}
+.block {
+text-align: center;
+background: #FFBC0D;
+}
