@@ -1,0 +1,17 @@
+<apex:page Controller="custSupport_Extension" title="MaDonal Customer Support">
+  	<apex:slds />
+        <apex:form >
+            <apex:PageBlock title="Feel free to leave any feedback!">
+            	<apex:pageBlockSection columns="1">
+                    <apex:inputField value="{!myAccount.name}" required="True" />
+                    <apex:inputField value="{!myAccount.Email__c}" />
+                    <apex:inputField value="{!myOrder.Restaurant__c}"/>
+                    <apex:selectList label="Topic" value="{!selectedTopic}" multiselect="False" size="1" >
+                    	<apex:selectOptions value="{!topicOptions}" />
+                    </apex:selectList>
+                    <apex:inputTextarea label="Description" value="{!Message}" />
+                    <apex:commandButton value="Submit" action="{!Submit}" />
+                </apex:pageBlockSection>
+        	</apex:PageBlock>
+        </apex:form>
+</apex:page>
