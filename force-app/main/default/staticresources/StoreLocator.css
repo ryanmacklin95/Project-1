@@ -1,0 +1,78 @@
+html {
+	font-family: "Gill Sans", sans-serif;
+	color: black;
+	background-color: white;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: white;
+}
+
+h1 {
+    border-color: black;
+    border-top: 1px;
+}
+
+input[type=button] {
+	border: 0;
+	border-radius: 15px;
+	padding: .25rem .5rem;
+	background-color: #ffbc0d;                        
+	color: var(--black);
+	font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type=text] {
+	border: 1;
+	height: 1.4rem;
+	border-radius: 5px;
+	background-color: white;
+}
+
+#info-section {
+	padding: 0 20%;
+}
+
+#api-section {
+	padding: 2rem 20%;
+	text-align: center;
+	margin: 1rem auto;  
+	background-color: white;                                                       
+}
+ 
+#map {
+	font-family: Arial;
+	font-size:12px;
+	height: 35rem;
+	width: 75rem;
+	margin: auto;
+ 	
+}
+                                                                        
+#searchBox {
+	border-right: none;
+	border-left: none;
+	border-top: none;
+	border-radius: 0;
+    height: 5rem;
+	width: 50rem;
+	background: white;
+    border-color: #c6c6c6;
+    padding-left: 25px;
+    font-size: 50px;
+}
+            
+#madonalPic {
+	height: 8em;
+	width: 10em;
+    border-style: solid;
+    border-right: none;
+	border-left: none;
+	border-top: none;
+    border-bottom: 2px;
+    border-color: #c6c6c6;
+}
+            
