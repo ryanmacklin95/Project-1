@@ -1,0 +1,161 @@
+<apex:page docType="html-5.0" Controller="RestaurantController">
+    <head>
+        <title>MaDonal Store Locator</title>
+        <apex:stylesheet value="{!$Resource.StoreLocator}" />       
+        <script
+        	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDModaGbZvcgtj28KsSXYDoF5qJrJptFBo"></script>
+        <script type="text/javascript">
+        	let map, targetCity, targetState;
+            let markers = [];
+            const labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+            let labelIndex = 0;
+        	let restaurants = [];
+        	let markersToDraw = [];
+        	let inCity = [];
+            
+        	window.onload = () => {
+                let apiBtn = document.querySelector("#btn");
+                apiBtn.addEventListener("click", redrawMap);
+                window.addEventListener("keydown", submitInput);
+                initMap();
+            };
+            
+            function initMap() {
+                map = new google.maps.Map(document.getElementById("map"), {
+                    center: { lat: 37.8283, lng: -98.5795 },
+                    zoom: 4.5,
+                    disableDefaultUI: true,
+                    clickableIcons: false,
+                });
+            }
+            
+            function submitInput(event) {
+                if (event.code !== "Enter") return;
+                deleteMarkers();
+                redrawMap();
+            }
+            
+        	//Performs API callout to get the latitude and longitude of the searched location
+            function getLatLng(searchQuery, callback) {
+                let results = [];
+                const ajaxRequest = new XMLHttpRequest();
+
+                ajaxRequest.addEventListener("readystatechange", function () {
+                    if (this.readyState == 4 && this.status == 200){
+                        let response = this.responseText;       
+                        response = JSON.parse(response);
+                        
+                        //create array where: 0 = Lat, 1 = Lng, 2 = City, 3 = State
+                        results = [response.results[0].geometry.location.lat,
+                                       response.results[0].geometry.location.lng,
+                                       response.results[0].formatted_address];
+                        console.log(results);
+                        callback.call(this, results, searchQuery);
+                    }
+                });
+                ajaxRequest.open("GET", "https://google-maps-geocoding.p.rapidapi.com/geocode/json?address=" + searchQuery + "&language=en");
+                ajaxRequest.setRequestHeader("x-rapidapi-host", "google-maps-geocoding.p.rapidapi.com");
+                ajaxRequest.setRequestHeader("x-rapidapi-key", "dfc44dc3f6msh2108a8ca0b7dcc8p1d6123jsn769e856fad88");
+                ajaxRequest.send();
+            }
+            
+			//Function for refocusing pre-initialized map on searched location
+            function redrawMap(){
+                labelIndex = 0;
+                inCity = [];
+                let input = document.querySelector("input[type=text]");
+                let searchQuery = input.value.toLowerCase();
+                if (!input.value) return;
+                input.value = "";
+                
+                //Callback function for setting up map
+                var setupMap = function(results, location){
+                    //Refocus the map on the searched city
+					map.setCenter({lat: +parseFloat(results[0]), lng: +parseFloat(results[1])});
+					map.setZoom(13);
+                    
+                    //Filter for the restaurants that are in the searched city
+                    for(let i = 0; i < restaurants.length; i++){
+                        formattedAddress = results[2].split(", ");
+                        console.log("formatted address: " + formattedAddress);
+                        if(restaurants[i].split(",")[1] == formattedAddress[0] && restaurants[i].split(",")[2] == formattedAddress[1]){
+                            inCity.push(restaurants[i]);
+                            console.log("inCity contents: " + inCity);
+                        }
+                    }
+                    drawMarkers();
+				}
+                getLatLng(searchQuery, setupMap);  
+            }
+            
+            function drawMarkers(){
+                var placeMarkers = function(results, location){
+                    //Address array where 1 = street address, 2 = city, 3 = state
+                    var address = location.split(",");
+                    var markerPoint = {lat: +parseFloat(results[0]), lng: +parseFloat(results[1])};
+                    console.log(address[0]);
+                    var contentString =
+                        '<div id="content">' +
+                        '<div id="bodyContent">' + '<img id="madonalPic" src="https://yupthatexists.com/wp-content/uploads/2019/04/knockoff5.jpg"/>' +
+                        "</div>" +
+                        '<h1>' + address[0] + '</h1><br/>' +
+                        '<h3>' + address[1] + ',</h3><br/>' +
+                        '<h3>' + address[2] + '</h3>' +
+                        "</div>";
+                    /*if(address[0].localeCompare("1600 Pennsylvania Ave NW"){
+						var contentString =
+                            '<div id="content">' +
+                            '<div id="bodyContent">' + '<img id="madonalPic" src="https://media.wltx.com/assets/WLTX/images/431b89e8-b89a-4bf1-9dc3-5dcf41cdcd6a/431b89e8-b89a-4bf1-9dc3-5dcf41cdcd6a_1140x641.jpg"/>' +
+                            "</div>" +
+                            '<h1>' + address[0] + '</h1><br/>' +
+                            '<h3>' + address[1] + ',</h3><br/>' +
+                            '<h3>' + address[2] + '</h3>' +
+                            "</div>";
+                    }*/
+                    const marker = new google.maps.Marker({
+                        position: markerPoint,
+                        map,
+                        label: labels[labelIndex++ % labels.length],
+                    });
+                    
+                    marker.infowindow = new google.maps.InfoWindow({content: contentString,});
+                    
+                    marker.addListener("click", () => {
+                        //Close all other marker windows
+                        for(let i = 0; i < markers.length; i++){
+                            markers[i].infowindow.close();
+						}
+						//Open window for clicked marker
+                        marker.infowindow.open({anchor: marker, map, shouldFocus: false,});
+                	});
+                    markers.push(marker);
+				}
+				for(let i = 0; i < inCity.length; i++){
+					getLatLng(inCity[i], placeMarkers); 
+				}
+            }
+
+            function deleteMarkers() {
+                for (let i = 0; i < markers.length; i++) {
+                    markers[i].setMap(null);
+                }
+                markers = [];
+            }
+        </script>
+    </head>
+    
+    <body>
+		<apex:pageBlock >
+            <div id="api-section" >
+				<input id="searchBox" type="text" name="searchInput" placeholder="Enter a city"/>
+				<input type="button" id="btn" value="Search" />
+			</div>
+			<div id="map" ></div>
+		</apex:pageBlock>
+        <apex:repeat value="{!Restaurant}" var="rest">
+            <script type="text/javascript">
+            	restaurants.push("{!rest.Restaurant_Address__c}," + "{!rest.Restaurant_City__c}," + "{!rest.Restaurant_State__c}");
+            </script>
+		</apex:repeat>
+    </body>
+</apex:page>

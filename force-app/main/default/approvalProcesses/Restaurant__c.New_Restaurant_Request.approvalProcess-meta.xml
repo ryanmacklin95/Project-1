@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
-    <active>true</active>
+    <active>false</active>
     <allowRecall>true</allowRecall>
     <allowedSubmitters>
         <type>owner</type>
@@ -16,18 +16,6 @@
         <field>Restaurant_City__c</field>
         <field>Restaurant_Address__c</field>
     </approvalPageFields>
-    <approvalStep>
-        <allowDelegate>true</allowDelegate>
-        <assignedApprover>
-            <approver>
-                <name>josh8950@brave-otter-fyh5f2.com</name>
-                <type>user</type>
-            </approver>
-            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
-        </assignedApprover>
-        <label>Submission</label>
-        <name>Submission</name>
-    </approvalStep>
     <emailTemplate>unfiled$public/New_Restaurant_Request</emailTemplate>
     <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
     <entryCriteria>
