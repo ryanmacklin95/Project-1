@@ -1,0 +1,19 @@
+<apex:page controller="MenuCon">
+    <apex:slds />
+    <apex:Form >
+                   
+                <h1>
+                Madonal menu
+    </h1>
+    
+    <apex:pageBlock title="Menu" id="MenuSection">
+    <apex:pageBlockTable value="{!products}" var="product">
+        <apex:column value="{! product.Name}"/>
+        <apex:column value="{! product.Description}" />
+        <apex:column value="{! product.ProductCost__c}"/>
+        
+        </apex:pageBlockTable>
+    </apex:pageBlock>
+       
+        </apex:Form>
+</apex:page>

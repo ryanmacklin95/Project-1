@@ -1,0 +1,5 @@
+<apex:page >
+    <p>
+        The test was a success.
+    </p>
+</apex:page>
