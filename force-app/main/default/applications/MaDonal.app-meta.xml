@@ -118,102 +118,12 @@
         <pageOrSobjectType>Order</pageOrSobjectType>
         <recordType>Order.Customer_Order</recordType>
         <type>Flexipage</type>
-        <profile>Cashier</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Order_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Order</pageOrSobjectType>
-        <recordType>Order.Customer_Order</recordType>
-        <type>Flexipage</type>
-        <profile>Cashier</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Order_Record_Page</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Order</pageOrSobjectType>
-        <recordType>Order.Customer_Order</recordType>
-        <type>Flexipage</type>
-        <profile>CEO</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Order_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Order</pageOrSobjectType>
-        <recordType>Order.Customer_Order</recordType>
-        <type>Flexipage</type>
-        <profile>CEO</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Order_Record_Page</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Order</pageOrSobjectType>
-        <recordType>Order.Customer_Order</recordType>
-        <type>Flexipage</type>
-        <profile>Manager</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Order_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Order</pageOrSobjectType>
-        <recordType>Order.Customer_Order</recordType>
-        <type>Flexipage</type>
-        <profile>Manager</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Order_Record_Page</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Order</pageOrSobjectType>
-        <recordType>Order.Customer_Order</recordType>
-        <type>Flexipage</type>
-        <profile>Franchising Manager</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Order_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Order</pageOrSobjectType>
-        <recordType>Order.Customer_Order</recordType>
-        <type>Flexipage</type>
-        <profile>Franchising Manager</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Order_Record_Page</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Order</pageOrSobjectType>
-        <recordType>Order.Customer_Order</recordType>
-        <type>Flexipage</type>
-        <profile>Admin</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Order_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Order</pageOrSobjectType>
-        <recordType>Order.Customer_Order</recordType>
-        <type>Flexipage</type>
         <profile>Admin</profile>
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
         <content>Order_Record_Page</content>
         <formFactor>Small</formFactor>
-        <pageOrSobjectType>Order</pageOrSobjectType>
-        <recordType>Order.Customer_Order</recordType>
-        <type>Flexipage</type>
-        <profile>Standard</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Order_Record_Page</content>
-        <formFactor>Large</formFactor>
         <pageOrSobjectType>Order</pageOrSobjectType>
         <recordType>Order.Customer_Order</recordType>
         <type>Flexipage</type>
