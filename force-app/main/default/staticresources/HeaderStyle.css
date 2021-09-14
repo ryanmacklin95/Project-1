@@ -1,0 +1,17 @@
+img:hover{
+    cursor: pointer;
+}
+img{
+    padding-left : 20px;
+}
+#theThing{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding-left: 300px;
+}
+#download{
+    padding-left: 30px;
+    font-size: medium;
+}
