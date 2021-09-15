@@ -1,0 +1,10 @@
+<apex:page controller="custSupport_Extension">
+    <apex:form >
+        <apex:pageBlock >
+            Thank you for the feedback!
+        <apex:pageBlockButtons >
+            <apex:commandButton value="return Home" action="{!returnHome}"/>
+    	</apex:pageBlockButtons>
+    </apex:pageBlock>
+    </apex:form>
+</apex:page>
