@@ -1,4 +1,4 @@
-#Team Vanquish - Epsilon Project 1
+# Team Vanquish - Epsilon Project 1
 
 In this project, our team collaborated to make an experience cloud customer user site to represent our business of MaDonal.
 
